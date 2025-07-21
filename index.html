@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body id="mainBD">
+        <div class="game-container">
+            <div id="highestScore"></div>
+            <div id="canvasDiv">
+                <div id="holdDiv">
+                    <h3 class="displayName"> Holding </h3>
+                    <canvas id="holdDisplay"></canvas>
+                </div>
+                <canvas id="gameCanvas"></canvas>
+                <div id="nextDiv">
+                    <h3 class="displayName"> Next </h3>
+                    <canvas id="nextDisplay"></canvas>
+                </div>
+            </div>
+            <div class="textBox" id="currScoreB"> Score: 0 <br> press p to start the game <br> level: 1</div>
+            <script src="js/recs.js"></script>
+            <script src="js/main.js"></script>
+        </div>
+    </body>
+</html>
