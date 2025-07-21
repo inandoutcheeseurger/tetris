@@ -1,0 +1,46 @@
+당직때 한거
+
+V 0.01
+added basic falling algorithm of tetromino object.
+
+what I am thinking to do next:
+  if the block falled completely, the coords of block will set to the array (board) so that we can calculate the next block.
+V 0.02
+added lots of functions, but there are a bug where the rows are not getting removed properly even though i thinbk i did everything right.
+
+added:
+    block hit detection
+    rotating blocks
+    left, right movement
+    tried to make removing row func, but faced a bug
+V 0.90
+finally game is playable. fixed a bug i mentioned previously
+
+
+fixed bug
+    added GameOver detection 
+      supposed to be done way long time ago
+    added level
+      speed increase
+      blink green when level up
+      blink grey when block removed
+    added hold feature
+      needs some update. currently show holding item by showing their color
+    what need to be done (todo)
+      update HIGHSCORE FEATURE!! <-- important one
+    adding to localStorage will overlap score with snake game. so what i am thinking is update both snake and tetris bystoring one variable (dictionary)
+      in the localStorage as like highValuesSnakes, highValuesTetris and assign those values as key: highscore, value: nnn something like that
+        this won't be hard, but will take some time
+
+V 0.95
+  added highscore feature
+    i have tried to save a dictoionary into localStorage variable but it failed. i think it does not allows to save dictionary cause the file size is too big 
+  fixed bug
+    when i turn the block when the block is in the very right corner, and the block gets longer in x axis, the block will goes through screen
+        i fixed by adjusting x and y coords (y for hitting bottom) once it hit the border or block
+  what needs to be done:
+      add a display that shows the currently holding block
+      made display already but not the function yet.
+
+V 1.00
+  finally added the display that shows holding block and the next block. lowkey final version. version after this will be UI update or bug fix
